@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GCEW International</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header id="main-header">
+		<div class="container">
+			<div class="logo">
+			<img src="../GCEW International/images/GCEWlogo.png" alt="">
+		</div>
+		</div>
+	</header>
+
+	<nav id="navbar">
+		<div class="container">
+			<ul id="navbar1">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="solutions.html">Solutions</a></li>
+				<li><a href="innovation.html">Innovation</a></li>
+				<li><a href="partners.html">Partners</a></li>
+				<li><a href="careers.html">Careers</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="team.html">Team</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<section id="showcase">
+
+			<div class="bodybanner">
+			<div class="slider-container">
+				<div class="slides">
+					<div class="slide">
+						<img src="../GCEW International/images/slide1.jpg" alt="Slide 1">
+					</div>
+					<div class="slide">
+						<img src="../GCEW International/images/slide2.jpg" alt="Slide 2">
+					</div>
+					<div class="slide">
+						<img src="../GCEW International/images/slide3.jpg" alt="Slide 3">
+					</div>
+					
+					<!-- Add more slides as needed -->
+				</div>
+			</div>
+			
+			<script>
+				let currentSlide = 0;
+				const slides = document.querySelector('.slides');
+				const totalSlides = document.querySelectorAll('.slide').length;
+			
+				function showSlide(index) {
+					if (index >= totalSlides) {
+						currentSlide = 0;
+					} else if (index < 0) {
+						currentSlide = totalSlides - 1;
+					} else {
+						currentSlide = index;
+					}
+			
+					const translateValue = -currentSlide * 100 + '%';
+					slides.style.transform = 'translateX(' + translateValue + ')';
+				}
+			
+				// You can add navigation buttons or automatic sliding here
+			
+				// Example: Automatic sliding every 3 seconds
+				setInterval(function () {
+					showSlide(currentSlide + 1);
+				}, 3000);
+			</script>
+			</div>
+		</div>
+		</section>
+
+	<div class="container">
+		<section id="main">
+			<h1>Out-of-School Children Research</h1>
+			<p>The number of children missing out on any schooling has increased by six million, 
+				bringing the total to 250 million, according to new figures released on Monday by the UN Education, Science,
+			    and Cultural Organization (UNESCO).
+			</p>
+
+
+			<h1>GCER International Mission</h1>
+			<p>Girl Child Education Watch International is a dedicated non-governmental organization passionately committed to addressing the critical issue of out-of-school children, with a primary emphasis on empowering and educating girls affected by poverty. In a world where the intersection of gender and poverty often denies countless girls their right to education, our organization stands as a beacon of hope, 
+				working tirelessly to break down barriers and create pathways to learning for the most vulnerable.
+				At the heart of our mission lies the unwavering commitment to ensuring that no girl is left behind due to the shackles of poverty. Girl Child Education Watch International aims to provide underprivileged girls with access to quality education, recognizing it as a powerful catalyst for breaking the cycle of poverty and fostering long-term positive change.
+			</p>
+
+			<h1>Crisis Response and Support</h1>
+			<p>Recognizing that poverty often intensifies during crises, Girl Child Education Watch International
+			   is poised to respond swiftly. Whether in the face of natural disasters, conflicts, 
+			   or economic downturns, we provide immediate support to ensure that girls continue their education, 
+			   offering stability amidst uncertainty.</p>
+
+			   <h1>Empowering Through Education</h1>
+			   <img src="../GCEW International/images/slide6.jpg" alt="">
+			   <p><em>&copy; UNESCO</em></p>
+			   <p>Education is not just a means of escaping poverty; it is a powerful tool for empowerment. Our organization is dedicated to providing girls with the knowledge and skills they need to overcome the challenges posed by poverty, 
+				equipping them to make informed decisions and break free from the cycle of deprivation.</p>
+
+			<h1>Impact and Stories of Resilience</h1>
+			<img src="../GCEW International/images/im01.jpg" alt="">
+			<p><em>&copy; UNESCO</em></p>
+			<p>The impact of Girl Child Education Watch International is measured not just in statistics but in the stories of resilience and triumph from the girls we serve. These stories showcase the transformative power of education, illustrating how, even in the face of poverty, girls can defy the odds, pursue their dreams, and become agents of change within their communities.
+
+				Girl Child Education Watch International envisions a world where every girl, regardless of her economic circumstances, has the opportunity to receive a quality education. Our work is a testament to the belief that investing in the education of girls is an investment in breaking the cycle of poverty and creating a more just and equitable world for generations to come.</p>
+		</section>
+
+		<aside id="sidebar">
+		<p>We focus on addressing the economic challenges that hinder girls from attending school. Through targeted initiatives, such as scholarships, school fee subsidies, and vocational training programs, we strive to alleviate financial 
+		   burdens that disproportionately impact girls in impoverished communities.</p>
+		</aside>
+
+		<aside id="sidebar">
+		<p>Girl Child Education Watch International believes in a holistic, community-centric approach. By collaborating with local communities, we identify and implement tailored solutions that take into account the unique 
+		   socio-economic dynamics, ensuring sustainable improvements in access to education for girls.
+		</p>
+		</aside>
+
+		<aside id="sidebar">
+		<p>Education is not just a means of escaping poverty; it is a powerful tool for empowerment. Our organization is dedicated to providing girls with the knowledge and skills they need to overcome the challenges posed by poverty, 
+			equipping them to make informed decisions and break free from the cycle of deprivation.</p>
+		</aside>
+
+		<aside id="sidebar">
+			<p>The impact of Girl Child Education Watch International is measured not just in statistics but in the stories of resilience and triumph from the girls we serve. These stories showcase the transformative power of education, illustrating how, even in the face of poverty,
+				 girls can defy the odds, pursue their dreams, and become agents of change within their communities.
+			</p>
+			</aside>
+	</div>
+
+	<footer id="main-footer">
+		<p>Copyright &copy; 2023 GCEW International</p>
+	</footer>
+</body>
+</html>

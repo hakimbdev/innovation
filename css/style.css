@@ -1,0 +1,159 @@
+body{
+	background-color: #f4f4f4;
+	color: #555;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.6em;
+	margin: 0;
+}
+
+.logo img {
+	float: left;
+	width: 200px;
+	height: 200px;
+	padding-top: 20px;
+}
+
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow:hidden;
+	font-family: math;
+}
+
+#navbar1 {
+	float: right;
+}
+
+#main-header{
+	background-color: #e0fa09;
+	color:#000000;
+}
+
+#navbar{
+	background-color: #e0fa09;
+	color: #000000;
+}
+
+#navbar ul{
+	padding: 0;
+	list-style: none;
+}
+
+#navbar li{
+	display: inline;
+}
+
+#navbar a{
+	color: #000000;
+	text-decoration: none;
+	font-size: 18px;
+	padding-right: 15px;
+}
+
+#navbar a:hover {
+	color: skyblue;
+	text-align: center;
+}
+
+
+.bodybanner {
+	margin-top: 10px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.slider-container {
+	width: 100%;
+	height: 300px; /* Adjust the height as needed */
+	overflow: hidden;
+	position: relative;
+}
+
+.slides {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+	min-width: 100%;
+	box-sizing: border-box;
+}
+
+
+#showcase h1{
+	color: #000000;
+	font-size: 35px;
+	line-height: 1.6em;
+	padding-top: 50px;
+}
+
+#main{
+	float: left;
+	width: 70%;
+	padding: 0 2px;
+	box-sizing: border-box;
+}
+
+#main h1 {
+	color: #000000;
+}
+
+#teamnames {
+	text-align: left;
+	font-size: 20px;
+	color: #000000;
+	line-height: 2px;
+}
+
+#position {
+	font-weight: bold;
+	margin-left: 50px;
+}
+
+#teamnames img {
+	width: 300px;
+	height: 300px;
+}
+
+#teamnames p {
+	font-weight: none;
+	margin-left: 50px;
+}
+
+#sidebar{
+	float: right;
+	width: 30%;
+	background: #e0fa09;
+	color: #000000;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#main-footer{
+	background: #e0fa09;
+	color: #000000;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+
+
+
+
+/* For additional decoration of the floats we apply the codes below*/
+
+@media(max-width:600px){
+	#main{
+		width: 100%;
+		float: none;
+	}
+
+	#sidebar{
+		width: 100%;
+		float: none;
+	}
+}
+
+
